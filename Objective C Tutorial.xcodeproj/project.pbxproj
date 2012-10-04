@@ -10,6 +10,7 @@
 		F16A64EA161E15C8006F7A5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16A64E9161E15C8006F7A5F /* Foundation.framework */; };
 		F16A64ED161E15C8006F7A5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F16A64EC161E15C8006F7A5F /* main.m */; };
 		F16A64F1161E15C8006F7A5F /* Objective_C_Tutorial.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F16A64F0161E15C8006F7A5F /* Objective_C_Tutorial.1 */; };
+		F16A6505161E3F41006F7A5F /* main.example1 in Sources */ = {isa = PBXBuildFile; fileRef = F16A6504161E3F41006F7A5F /* main.example1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		F16A64EC161E15C8006F7A5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F16A64EF161E15C8006F7A5F /* Objective C Tutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective C Tutorial-Prefix.pch"; sourceTree = "<group>"; };
 		F16A64F0161E15C8006F7A5F /* Objective_C_Tutorial.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Objective_C_Tutorial.1; sourceTree = "<group>"; };
+		F16A6502161E3E92006F7A5F /* example2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = example2; sourceTree = "<group>"; };
+		F16A6504161E3F41006F7A5F /* main.example1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.example1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +76,9 @@
 		F16A64EB161E15C8006F7A5F /* Objective C Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				F16A6502161E3E92006F7A5F /* example2 */,
 				F16A64EC161E15C8006F7A5F /* main.m */,
+				F16A6504161E3F41006F7A5F /* main.example1 */,
 				F16A64F0161E15C8006F7A5F /* Objective_C_Tutorial.1 */,
 				F16A64EE161E15C8006F7A5F /* Supporting Files */,
 			);
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F16A64ED161E15C8006F7A5F /* main.m in Sources */,
+				F16A6505161E3F41006F7A5F /* main.example1 in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +242,7 @@
 				F16A64F6161E15C8006F7A5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

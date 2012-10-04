@@ -7,16 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "example2/User.h"
 
+
+/* Second Example */
 int main(int argc, const char * argv[])
 {
-
-    @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
-    }
+    // Initialize an object
+    User *user = [[User alloc] init];
+    
+    // Call the methode setFirstName of User object
+    [user setFirstName: @"Maxime"];
+    [user setLastName: @"Parmentier"];
+    [user print];
     return 0;
 }
-
