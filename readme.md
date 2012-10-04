@@ -81,6 +81,16 @@ int main(int argc, const char * argv[])
 * Documentation data types: http://www.techotopia.com/index.php/Objective-C_2.0_Data_Types
 * Operators, control statements, loops are similars to javascript or PHP, you can find a complete list here: http://www.dummies.com/how-to/content/objectivec-for-dummies-cheat-sheet.html
 
+
 ## Create a class
 
 Import files form folder and framework using `#import path/filename.h`
+
+
+
+## Folder Group Structure in XCode
+Folders appear in blue and Groups appears in yellow. Groups will structure your files only in the XCode project navigator and will not create folder in the physical location. If for any reason you need to add folder, you need to include them in your xcode project to be referenced, so compiled.
+
+ 
+If you structure your files in a directory
+

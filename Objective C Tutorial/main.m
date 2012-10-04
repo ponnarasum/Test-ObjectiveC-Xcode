@@ -7,38 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-
-// Define constante
-const int BIPLANE_DEBUG = 1;
+#import "example2/User.h"
 
 
 int main(int argc, const char * argv[])
 {
-    // Data types
-    int age = 28;
-    float heightInFeet = 5.11;
-    double heightInMeter = 1.80;
-    char meter = 'm';
-    char newline = '\n';
-    BOOL isTutorial = 1;
+    // Initialize an object
+    User *user = [[User alloc] init];
     
-    // String using class NSString
-    NSString *name = @"Maxime Parmentier";
+    // Call the methode setFirstName of User object
+    [user setFirstName: @"Maxime"];
+    [user setLastName: @"Parmentier"];
+    [user printName];
     
-    // Print data
-    printf("Hello %s!", [name UTF8String]);
-    printf("%c", newline);
-    printf("%s is %d years old, %f feet tall, (%f %c tall)", [name UTF8String], age, heightInFeet, heightInMeter, meter);
-    printf("%c", newline);
-    
-    // Print log
-    if (isTutorial) {
-        NSLog(@"This is a log.");
-        printf("%c", newline);
-    }
-    
-    // Print constant DEBUG
-    printf("BIPLANE_DEBUG %i", BIPLANE_DEBUG);
+    // Age
+    [user setAge:27];
+    [user incrementAge];
+    [user printAge];
     
     return 0;
 }

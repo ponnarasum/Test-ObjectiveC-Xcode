@@ -21,8 +21,16 @@
     return lastName;
 }
 
-- (void) print {
-    printf("%s %s", [firstName UTF8String], [lastName UTF8String]);
+- (int) age {
+    return age;
+}
+
+- (void) printName {
+    printf("%s %s\n", [firstName UTF8String], [lastName UTF8String]);
+}
+
+- (void) printAge {
+    printf("%s is %d years old\n", [firstName UTF8String], age);
 }
 
 - (void) setFirstName: (NSString*) fn {
@@ -31,6 +39,12 @@
 
 - (void) setLastName:(NSString*)ln {
     lastName = ln;
+}
+- (void) setAge:(int) a {
+    age = a;
+}
+- (void) incrementAge {
+    age = age + 1;
 }
 
 @end

@@ -16,13 +16,18 @@
     // Set variables
     NSString* firstName;
     NSString* lastName;
+    int age;
 }
 
 // List functions
 - (NSString*) firstName;
 - (NSString*) lastName;
-- (void) print;
+- (int) age;
+- (void) printName;
+- (void) printAge;
 - (void) setFirstName: (NSString*) fn;
 - (void) setLastName: (NSString*) ln;
+- (void) setAge: (int) a;
+- (void) incrementAge;
 
 @end
