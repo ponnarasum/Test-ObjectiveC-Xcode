@@ -84,13 +84,12 @@ int main(int argc, const char * argv[])
 
 ## Create a class
 
+
+
+
+### Folder Group Structure in XCode
 Import files form folder and framework using `#import path/filename.h`
 
+Folders appear in blue and Groups appears in yellow. Groups will structure your files only in the XCode project navigator and will not create folder in the physical location.
 
-
-## Folder Group Structure in XCode
-Folders appear in blue and Groups appears in yellow. Groups will structure your files only in the XCode project navigator and will not create folder in the physical location. If for any reason you need to add folder, you need to include them in your xcode project to be referenced, so compiled.
-
- 
-If you structure your files in a directory
-
+If for any reason you need to add folder, you need to include them in your xcode project to be referenced, so compiled.
