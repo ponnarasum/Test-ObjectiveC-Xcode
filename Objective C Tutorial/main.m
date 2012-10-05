@@ -32,9 +32,18 @@ int main(int argc, const char * argv[])
     printf("\n");
     
     // User experience
-    [user developFor:7];
+    [user setYearsOfExperience:7];
     [user printExperience];
     printf("\n");
+    
+    // Add programming languages
+    [user addLanguage: @"Objective C"];
+    [user addLanguage: @"Javascript"];
+    [user addLanguage: @"Python"];
+    [user addLanguage: @"PHP"];
+    
+    // Print user languages
+    [user listLanguages];
     
     return 0;
 }

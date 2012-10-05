@@ -21,9 +21,12 @@
 // @property allow to create automatically setter and getter
 // for the property.
 @property (nonatomic) int yearsOfExperience;
+@property (nonatomic) NSMutableArray *languages;
 
 // Declare public methods
 - (void) printExperience;
 - (void) developFor: (int) years;
+- (void) addLanguage: (NSString*) language;
+- (void) listLanguages;
 
 @end
