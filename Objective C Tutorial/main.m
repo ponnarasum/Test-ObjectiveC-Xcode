@@ -36,7 +36,7 @@ int main(int argc, const char * argv[])
     [user printExperience];
     printf("\n");
     
-    // Add programming languages
+    // Add programming languages to user
     [user addLanguage: @"Objective C"];
     [user addLanguage: @"Javascript"];
     [user addLanguage: @"Python"];

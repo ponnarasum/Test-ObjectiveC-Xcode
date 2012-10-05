@@ -77,19 +77,26 @@ int main(int argc, const char * argv[])
 }
 ```
 
-* Anytime an object is declared, need to add "*" before variable name to register the variable (C pointer). Example with `NSString *name = @"Maxime Parmentier\n";`
 * Documentation data types: http://www.techotopia.com/index.php/Objective-C_2.0_Data_Types
 * Operators, control statements, loops are similars to javascript or PHP, you can find a complete list here: http://www.dummies.com/how-to/content/objectivec-for-dummies-cheat-sheet.html
 
 
 ## Create a class
 
+In the repository I've create two classes: User and Developer. User is the super class of Developer. This means that in the Developer header file I am importing the User header class: `#import "User.h"`.
 
+This example will create a new user, give him a name, an age. As a developer we will describe his experience and the languages he can write.
+
+
+## What I learned
+
+### Objects
+* Every objects needs to have a pointer. `NSString *test = @"this is a test"`.
+* An object is an instance of a class.
+* Declare the variables of a class using `@property` to initialize automatically the getter and setter methods
 
 
 ### Folder Group Structure in XCode
-Import files form folder and framework using `#import path/filename.h`
-
-Folders appear in blue and Groups appears in yellow. Groups will structure your files only in the XCode project navigator and will not create folder in the physical location.
-
-If for any reason you need to add folder, you need to include them in your xcode project to be referenced, so compiled.
+* Import files form folder and framework using `#import path/filename.h`
+* Folders appear in blue and Groups appears in yellow. Groups will structure your files only in the XCode project navigator and will not create folder in the physical location.
+* If for any reason you need to add folder, you need to include them in your xcode project to be referenced, so compiled.
