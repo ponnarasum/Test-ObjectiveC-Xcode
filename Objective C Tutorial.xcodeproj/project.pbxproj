@@ -10,7 +10,8 @@
 		F16A64EA161E15C8006F7A5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16A64E9161E15C8006F7A5F /* Foundation.framework */; };
 		F16A64ED161E15C8006F7A5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F16A64EC161E15C8006F7A5F /* main.m */; };
 		F16A64F1161E15C8006F7A5F /* Objective_C_Tutorial.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F16A64F0161E15C8006F7A5F /* Objective_C_Tutorial.1 */; };
-		F16A650C161E55EE006F7A5F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F16A650B161E55EE006F7A5F /* User.m */; };
+		F16A6512161F4B3F006F7A5F /* Developer.m in Sources */ = {isa = PBXBuildFile; fileRef = F16A6511161F4B3F006F7A5F /* Developer.m */; };
+		F16A6513161F4E3C006F7A5F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F16A650E161F49A1006F7A5F /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,9 +33,10 @@
 		F16A64EC161E15C8006F7A5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F16A64EF161E15C8006F7A5F /* Objective C Tutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective C Tutorial-Prefix.pch"; sourceTree = "<group>"; };
 		F16A64F0161E15C8006F7A5F /* Objective_C_Tutorial.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Objective_C_Tutorial.1; sourceTree = "<group>"; };
-		F16A6502161E3E92006F7A5F /* example2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = example2; sourceTree = "<group>"; };
-		F16A6504161E3F41006F7A5F /* example1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = example1.m; sourceTree = "<group>"; };
-		F16A650B161E55EE006F7A5F /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = User.m; path = "Objective C Tutorial/example2/User.m"; sourceTree = "<group>"; };
+		F16A650D161F49A1006F7A5F /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		F16A650E161F49A1006F7A5F /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F16A6510161F4B2A006F7A5F /* Developer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Developer.h; sourceTree = "<group>"; };
+		F16A6511161F4B3F006F7A5F /* Developer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Developer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,6 @@
 		F16A64DA161E15C8006F7A5F = {
 			isa = PBXGroup;
 			children = (
-				F16A650B161E55EE006F7A5F /* User.m */,
 				F16A64EB161E15C8006F7A5F /* Objective C Tutorial */,
 				F16A64E8161E15C8006F7A5F /* Frameworks */,
 				F16A64E6161E15C8006F7A5F /* Products */,
@@ -78,9 +79,11 @@
 		F16A64EB161E15C8006F7A5F /* Objective C Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				F16A6502161E3E92006F7A5F /* example2 */,
+				F16A650D161F49A1006F7A5F /* User.h */,
+				F16A6510161F4B2A006F7A5F /* Developer.h */,
+				F16A650E161F49A1006F7A5F /* User.m */,
+				F16A6511161F4B3F006F7A5F /* Developer.m */,
 				F16A64EC161E15C8006F7A5F /* main.m */,
-				F16A6504161E3F41006F7A5F /* example1.m */,
 				F16A64F0161E15C8006F7A5F /* Objective_C_Tutorial.1 */,
 				F16A64EE161E15C8006F7A5F /* Supporting Files */,
 			);
@@ -146,8 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16A6513161F4E3C006F7A5F /* User.m in Sources */,
 				F16A64ED161E15C8006F7A5F /* main.m in Sources */,
-				F16A650C161E55EE006F7A5F /* User.m in Sources */,
+				F16A6512161F4B3F006F7A5F /* Developer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

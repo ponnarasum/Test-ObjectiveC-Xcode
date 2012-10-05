@@ -7,23 +7,34 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "example2/User.h"
+#import "Developer.h"
 
 
 int main(int argc, const char * argv[])
 {
     // Initialize an object
-    User *user = [[User alloc] init];
+    Developer *user = [[Developer alloc] init];
     
-    // Call the methode setFirstName of User object
+    // Call the method setFirstName of Developer object via superclass user
     [user setFirstName: @"Maxime"];
     [user setLastName: @"Parmentier"];
     [user printName];
+    printf("\n");
     
-    // Age
+    // Set user age
     [user setAge:27];
+    [user printAge];
+    printf("\n");
+    
+    // User birthday
     [user incrementAge];
     [user printAge];
+    printf("\n");
+    
+    // User experience
+    [user developFor:7];
+    [user printExperience];
+    printf("\n");
     
     return 0;
 }
